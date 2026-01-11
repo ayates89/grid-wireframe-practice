@@ -1,0 +1,59 @@
+@import url("./reset.css");
+
+.grid-box {
+    display: grid;
+    text-align: center;
+    grid-gap: .5rem;
+    justify-items: stretch;
+    padding: .5rem;
+    width: 90vw;
+
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: 6px;
+
+}
+
+body {
+    display: grid;
+    justify-content: center;
+}
+
+header {
+    background-color: rgb(189, 18, 172);
+
+}
+
+aside:first-of-type {
+    background-color: rgb(18, 55, 174);
+}
+
+aside:last-of-type {
+    background-color: rgb(54, 159, 220);
+
+}
+
+.column {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(10, 157, 96);
+    padding: 1rem 1rem;
+    gap: 1rem;
+   
+}
+
+.column > div {
+    display: grid;
+    align-content: center;
+    background-color: rgb(210, 36, 135);
+    gap: 1rem;
+    padding:.5rem 1rem;
+}
+
+footer {
+    background-color: rgb(232, 129, 27);
+}
