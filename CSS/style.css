@@ -12,6 +12,7 @@
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     color: white;
     padding: .5rem 2rem;
     border-radius: 6px;
@@ -30,10 +31,12 @@ header {
 
 aside:first-of-type {
     background-color: rgb(18, 55, 174);
+    align-content: center;
 }
 
 aside:last-of-type {
     background-color: rgb(54, 159, 220);
+    align-content: center;
 
 }
 
@@ -56,4 +59,30 @@ aside:last-of-type {
 
 footer {
     background-color: rgb(232, 129, 27);
+}
+
+@media (min-width: 755px) {
+    .grid-box {
+        grid-template-areas:
+            "header header header"
+            "aside1 column aside2"
+            "footer footer footer";
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+        header {
+        grid-area: header;
+    }
+
+    aside:first-of-type {
+        grid-area: aside1;
+    }
+
+    aside:last-of-type {
+        grid-area: aside2;
+    }
+
+    footer {
+        grid-area: footer;
+    }
 }
